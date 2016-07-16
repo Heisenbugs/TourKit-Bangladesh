@@ -1,39 +1,66 @@
 <ion-header>
-  <ion-navbar navcolor>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Tour<span style="color:greenyellow;">Kit</span> Bangla<span style="color:greenyellow">desh</span></ion-title>
-  </ion-navbar>
+    <ion-navbar navcolor>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Tour<span style="color:greenyellow;">Kit</span> Bangla<span style="color:greenyellow">desh</span></ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content class="home">
 
-  <ion-slides pager>
-  <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_02.jpg')">
-    <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    </p>
-  </ion-slide>
+    <ion-slides pager style="margin-top: -60%">
+        <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_02.jpg')">
+            <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            </p>
+        </ion-slide>
 
-  <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_01.jpg')">
-    <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    </p>
-  </ion-slide>
+        <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_01.jpg')">
+            <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            </p>
+        </ion-slide>
 
-  <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_03.jpg')">
-    <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    </p>
-  </ion-slide>
+        <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_03.jpg')">
+            <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            </p>
+        </ion-slide>
 
-  <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_04.jpg')">
-    <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    </p>
-  </ion-slide>
+        <ion-slide style="margin-top: 0%;height: 90%;background-size: 100% 100%;background-image:url('../img/slide_04.jpg')">
+            <p padding style="background-color: rgba(0, 0, 0, 0.5);text-align: -webkit-center;margin-top: 120%;    color: aliceblue;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            </p>
+        </ion-slide>
+    </ion-slides>
 
-</ion-slides>
+    <ion-grid>
+        <ion-row>
+            <ion-col width-50>
+                <ion-card style="width:100%;">
+                    <img src="../img/arrival.jpg" style="height:10em" />
+                    <div class="card-title" style="top: 82%;">On Arrival</div>
+                </ion-card>
+                <ion-card style="width:100%;height:15em">
+                    <img src="../img/translate.jpg" />
+                    <div class="card-title"  style="top:88%">Translate</div>
+                </ion-card>
+            </ion-col>
+            <ion-col width-50>
+                <ion-card style="height: 15em;">
+                    <img src="../img/wifi.jpg" />
+                    <div class="card-title"  style="top:88%">Connectivity</div>
+                </ion-card>
+
+                <ion-card style="height:10em">
+                    <img src="../img/emergency.png"/>
+                    <div class="card-title"  style="top:82%;background-color: #343434;">Emergency</div>
+                </ion-card>
+            </ion-col>
+
+        </ion-row>
+    </ion-grid>
+
 
 </ion-content>
