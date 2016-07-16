@@ -2,10 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 import { ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
-//pages
-import {HomePage} from './pages/home/home.page'
-import { Page2 } from './pages/page2/page2';
-
+//load pages
+import {HomePage} from './pages/home/home.page';
+import {ArrivalPage} from './pages/arrival/arrival.page';
+import {TranslatePage} from './pages/translate/translate.page';
+import {ConnectivityPage} from './pages/connectivity/connectivity.page';
+import {EmergencyPage} from './pages/emergency/emergency.page';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -23,12 +25,11 @@ class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component:HomePage },
-      {title: 'On Arrival', component:HomePage},
-      {title: 'Translate', component: HomePage},
-      {title: 'Connectivity',component: HomePage},
-      {title: 'Emergency',component:HomePage},
+      {title: 'On Arrival', component:ArrivalPage},
+      {title: 'Translate', component: TranslatePage},
+      {title: 'Connectivity',component: ConnectivityPage},
+      {title: 'Emergency',component:EmergencyPage},
     ];
-
   }
 
   initializeApp() {
@@ -45,5 +46,4 @@ class MyApp {
     this.nav.setRoot(page.component);
   }
 }
-
 ionicBootstrap(MyApp);
